@@ -1,0 +1,56 @@
+{
+  "name": "tel-highlight",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "tel",
+    "highlight",
+    "手机号",
+    "高亮"
+  ],
+  "homepage": "https://github.com/guangzan/tel-highlight",
+  "bugs": {
+    "url": "https://github.com/guangzan/tel-highlight/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guangzan/tel-highlight.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "guangzan",
+    "url": "https://www.cnblogs.com/guangzan",
+    "email": "guangzan1999@outlook.com"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.cjs.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && cp ./src/index.d.ts ./dist",
+    "test": "vitest --ui",
+    "coverage": "vitest run --coverage",
+    "link": "npm run link 'tel-highlight'"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.4",
+    "@vitest/ui": "^0.6.0",
+    "c8": "^7.11.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vitest": "^0.6.0"
+  },
+  "dependencies": {
+    "vue": "^3.2.31"
+  }
+}
