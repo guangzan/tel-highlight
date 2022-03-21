@@ -13,4 +13,6 @@ type Options = {
   separator?: Separator
   separat?: Separat
 }
-export declare function telHighlight(options: Options): HighlightList
+declare function telHighlight(options: Options): HighlightList
+
+export { telHighlight };

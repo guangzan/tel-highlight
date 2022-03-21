@@ -1,3 +1,7 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
 function highlightNum(tel, highlight) {
   if (typeof tel == "number")
     tel = String(tel);
@@ -96,4 +100,5 @@ function telHighlight(options) {
     return phoneNumDataList;
   return joinSeparator(phoneNumDataList, separator);
 }
-export { telHighlight };
+
+exports.telHighlight = telHighlight;
